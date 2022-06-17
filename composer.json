@@ -1,0 +1,32 @@
+{
+    "name": "aleksandr/kz-postal",
+    "type": "project",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Aleksandr\\KzPostal\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aleksandr",
+            "email": "laker.tv@bk.ru"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/kliker02/api-kazpost-php.git"
+        }
+    ],
+    "require": {
+        "rustem-kaimolla/kazpost-api": "dev-at/improvements",
+        "bramus/router": "~1.6"
+    },
+    "scripts": {
+        "serve": "php -S localhost:8080 -t ."
+    },
+    "config": {
+        "timeout": 0
+    }
+}
